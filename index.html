@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Business Generator</title>
 
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sevillana&display=swap" rel="stylesheet">
@@ -17,12 +21,12 @@
         <h1>AI Business Idea Generator</h1>
         <div class="form-container">
             <form id="user-input-form">
-                 <input type="text" placeholder="Enter business field..." autofocus required autocomplete="off" class="user-input-slot"/>
+                 <input type="text" placeholder="Enter business field..." autofocus required autocomplete="off" class="user-input-slot" id="user-input"/>
                 <button class="search-button">Search</button>
             </form>
             <div class="hint"><em>i.e: Farming, Technology or Construction</em></div>
         </div>
-        <div class="business-advice">Generated business idea goes here</div>
+        <div class="business-advice" id="business-advice">Generated business idea goes here</div>
 
 
         <footer>This project is open-source, available on
